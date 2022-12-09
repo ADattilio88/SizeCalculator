@@ -3,14 +3,22 @@
 mylist = list(("Nike", "Cotton On"))
 for x in range(len(mylist)):
     print(mylist[x])
+
 #how to show only the sizes for store user selects
 user_store_selection = str(input("Please select a store from the list above: "))
-
+#if user_store_selection == "nike":
+    # print what
+#elif user_store_selection == "cotton on":
+    #print what
+#else:
+    #print("Please only select stores from the list.")
 
 #NIKE(Women's Bottoms)
 #https://www.nike.com/size-fit/womens-bottoms-alpha - Nike women's size chart
 
+
 #Waist size in inches
+    
 Nike_waist_size_XXS_low = 21.25
 Nike_waist_size_XXS_high = 23.5
 Nike_waist_size_XS_low = 23.5
@@ -26,8 +34,9 @@ Nike_waist_size_XL_high = 38.5
 Nike_waist_size__XXL_low = 38.5
 Nike_waist_size__XXL_high = 42.5
 
+
 #Hip size in inches
-#change to above format
+
 Nike_hip_size_XXS_low = 30.5
 Nike_hip_size_XXS_high = 33
 Nike_hip__size_XS_low = 33
@@ -42,8 +51,10 @@ Nike_hip_size_XL_low = 44
 Nike_hip_size_XL_high = 47
 Nike_hip_size_XXL_low = 47
 Nike_hip_size_XXL_high = 50
+
  
-#Height in inches 
+#Height in inches
+
 Nike_height_XXS_low = 64
 Nike_height_XXS_high = 68
 Nike_height_XS_low = 64
@@ -71,7 +82,9 @@ user_height = int(input("\nEnter height in centimeters: "))
 print(user_height / 2.54, end= " in.")
 user_height_in = user_height / 2.54
 
+
 #waist size
+
 if user_waist_size_in > 21.25 and user_waist_size_in < 23:
     print("\nYour waist fits size", "XXS", sep=": ")
 if user_waist_size_in > 23.5 and user_waist_size_in < 26:
@@ -87,7 +100,9 @@ if user_waist_size_in > 34.5 and user_waist_size_in < 38.5:
 if user_waist_size_in > 38.5 and user_waist_size_in < 42.5:
     print("\nYour waist fits size", "XXL", sep=": ")
 
+
 #hip size
+    
 if user_hip_size_in > 30.5 and user_hip_size_in < 33:
     print("Your hips fit size", "XXS", sep=": ")
 if user_hip_size_in > 33 and user_hip_size_in < 35.5:
@@ -176,8 +191,16 @@ if user_hip_size_in > 43.6 and user_hip_size_in < 43.7:
     print("\nYour hips fit size", "12", sep=": ")
 
 user_waist_size != user_hip_size
+
     
 #store does not carry your size. would you like to try a dufferent store? select y to continue or n to quit
+answer = input("Would you like to continue? Enter yes or no: ")
+#if answer == "yes":
+    #what here (i want to prompt to run the program again)
+#elif answer == "no":
+    #what here (if no i want the program to stop and end there)
+#else:
+    #print("Please enter yes or no.")
 
 #if(Nike_waist_size > 23.5 or Nike < 30
 #if out of range, print store does not carry size
@@ -185,3 +208,4 @@ user_waist_size != user_hip_size
 
 #additional websites used for assistance:
 #https://www.w3schools.com/python/default.asp
+#https://www.folkstalk.com/tech/how-to-ask-a-yes-or-no-question-on-python-with-code-examples/
